@@ -10,6 +10,7 @@ If ( A_TimeIdle > 1500 ) {
 		Random, randWait, 10000, 20000
 		Send {Enter}
 		SendInput, /dance
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -70,6 +71,7 @@ If ( A_TimeIdle > 1500 ) {
 	if(rand == 5){
 		Send {Enter}
 		SendInput, /sit
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -92,6 +94,7 @@ If ( A_TimeIdle > 1500 ) {
 		Random, randWait, 10000, 20000
 		Send {Enter}
 		SendInput, /train
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -101,6 +104,7 @@ If ( A_TimeIdle > 1500 ) {
 		Random, randWait, 10000, 20000
 		Send {Enter}
 		SendInput, /bark
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -110,6 +114,7 @@ If ( A_TimeIdle > 1500 ) {
 		Random, randWait, 10000, 20000
 		Send {Enter}
 		SendInput, /sneeze
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -119,6 +124,7 @@ If ( A_TimeIdle > 1500 ) {
 		Random, randWait, 10000, 20000
 		Send {Enter}
 		SendInput, /sleep
+		sleep 1000
 		Send {Enter}
 		sleep randWait
 		SendInput, w
@@ -127,6 +133,7 @@ If ( A_TimeIdle > 1500 ) {
 	if(rand == 14){ 
 		Send {Enter}
 		SendInput, Corona är bara på låtsas - precis som att jorden är platt och grisar kan flyga
+		sleep 1000
 		Send {Esc}
 	}
 	if(rand == 20){ ; go apeshit
