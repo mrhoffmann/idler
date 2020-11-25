@@ -2,9 +2,9 @@
 SetTimer, DetectIdle
 
 DetectIdle:
-If ( A_TimeIdle > 1500 ) {
-	Random, rand, 1, 20
-	sleep 300000 ;master wait, set to high for waiting some minutes instead, standard: 5 minutes
+If ( A_TimeIdle > 15000 ) {
+	Random, rand, 1, 20 ; select action
+	sleep 300000 ; master wait, set to high for waiting some minutes instead, standard: 5 minutes
 
 	if(rand == 1){
 		Random, randWait, 10000, 20000
@@ -131,8 +131,13 @@ If ( A_TimeIdle > 1500 ) {
 		SendInput, s
 	}
 	if(rand == 14){ 
-		Send {Enter}
-		SendInput, Corona är bara på låtsas - precis som att jorden är platt och grisar kan flyga
+		Random, randLoop, 5, 20
+		loop, randLoop
+		{
+			Random, randWait, 700,1100 
+			Send {space}
+			sleep randWait
+		}
 		sleep 1000
 		Send {Esc}
 	}
